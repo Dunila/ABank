@@ -1,0 +1,233 @@
+ {
+      "banka": {
+        "zakazniky": [
+          
+            {
+              "id": "1",
+              "jmeno": "Maria Novakova",
+              "ucet": {
+                "cislo_uctu": "0987654321",
+                "cislo_karty": "123456789",
+                "balance": "30000.000",
+                "datum_vytvoreni": "02.12.2012",
+                "platnost_karty": "07/27",
+                "internetove_platby": "povolen",
+                "limit_internetove_platby": "5000"
+              },
+              "historie_transakci": [
+                
+                  {
+                    "datum": "2024-04-27",
+                    "castka": "-1000.000",
+                    "popis": "Nakup",
+                    "typ_uctu": "Bezny ucet",
+                    "zpusob_platby": "Platba kartou"
+                  },
+                  {
+                    "datum": "2024-05-20",
+                    "castka": "-200.00",
+                    "popis": "Platba uctu za telefon",
+                    "typ_uctu": "Studentsky ucet",
+                    "zpusob_platby": "Platebni aplikace"
+                  }
+              ],
+              "kontaktni_informace": {
+                "email": "- maria.novakova@example.com",
+                "telefon": "+420170899"
+              },
+              "adresa": {
+                "ulice": "Ceskomaravska",
+                "mesto": "Praha",
+                "psc": "19000",
+                "zeme": "CR"
+              },
+              "osobni_udaje": {
+                "datum_narozeni": "1990-01-01",
+                "pohlavi": "Zena",
+                "narodnost": "Ceska"
+              }
+            },
+            {
+              "id": "2",
+              "jmeno": "Joannes Novak",
+              "ucet": {
+                "cislo_uctu": "1234567890",
+                "cislo_karty": "987654321",
+                "balance": "50000.00",
+                "datum_vytvoreni": "05.10.2015",
+                "platnost_karty": "05/25",
+                "internetove_platby": "povolen",
+                "limit_internetove_platby": "2500"
+              },
+              "historie_transakci": [
+                
+                  {
+                    "datum": "2024-04-25",
+                    "castka": "-500.00",
+                    "popis": "Uhrada faktury",
+                    "typ_uctu": "Firemni ucet",
+                    "zpusob_platby": "Bankovni prevod"
+                  },
+                  {
+                    "datum": "2024-05-15",
+                    "castka": "-50.00",
+                    "popis": "Vyber z bankomatu",
+                    "typ_uctu": "Bezny ucet",
+                    "zpusob_platby": "Hotovostni platba"
+                  }
+              ],
+              "kontaktni_informace": {
+                "email": "joannes.novak@example.com",
+                "telefon": "+0987654321"
+              },
+              "adresa": {
+                "ulice": "Karlove namesti",
+                "mesto": "Praha",
+                "psc": "16500",
+                "zeme": "CR"
+              },
+              "osobni_udaje": {
+                "datum_narozeni": "1985-07-15",
+                "pohlavi": "Muz",
+                "narodnost": "Cech"
+              }
+            },
+            {
+              "id": "3",
+              "jmeno": "Carolus Dvorak",
+              "ucet": {
+                "cislo_uctu": "9876543210",
+                "cislo_karty": "456789012",
+                "balance": "100000.00",
+                "datum_vytvoreni": "15.09.2012",
+                "platnost_karty": "05/28",
+                "internetove_platby": "povolen",
+                "limit_internetove_platby": "3000"
+              },
+              "historie_transakci": [
+                
+                  {
+                    "datum": "2024-04-22",
+                    "castka": "5000.00",
+                    "popis": "Pripsani platu",
+                    "typ_uctu": "Bezny ucet",
+                    "zpusob_platby": "Platba kartou "
+                  },
+                  {
+                    "datum": "2024-05-10",
+                    "castka": "-1500.00",
+                    "popis": "Platba najemneho",
+                    "typ_uctu": "Sporici ucet",
+                    "zpusob_platby": "Bankovni prevod"
+                  }
+              ],
+              "kontaktni_informace": {
+                "email": "joannes.novak@example.com",
+                "telefon": "+420564877"
+              },
+              "adresa": {
+                "ulice": "Hradsany",
+                "mesto": "Praha",
+                "psc": "16900",
+                "zeme": "CR"
+              },
+              "osobni_udaje": {
+                "datum_narozeni": "1978-03-10",
+                "pohlavi": "Muz",
+                "narodnost": "Cech"
+              }
+            },
+            {
+              "id": "4",
+              "jmeno": "Lucia Kolarova",
+              "ucet": {
+                "cislo_uctu": "0123456789",
+                "cislo_karty": "789012345",
+                "balance": "80000.00",
+                "datum_vytvoreni": "25.02.2010",
+                "platnost_karty": "07/28",
+                "internetove_platby": "povolen",
+                "limit_internetove_platby": "4500"
+              },
+              "historie_transakci": [
+                
+                  {
+                    "datum": "2024-04-20",
+                    "castka": "-15000.00",
+                    "popis": "Platba najemneho",
+                    "typ_uctu": "Bezny ucet",
+                    "zpusob_platby": "PayPal platba"
+                  },
+                  {
+                    "datum": "2024-05-15",
+                    "castka": "-50.00",
+                    "popis": "Vyber z bankomatu",
+                    "typ_uctu": "Beznz ucet",
+                    "zpusob_platby": "Hotovostni platba"
+                  }
+              ],
+              "kontaktni_informace": {
+                "email": "lucia.kolarova@example.com",
+                "telefon": "+4201589635"
+              },
+              "adresa": {
+                "ulice": "Chaloupeckeho",
+                "mesto": "Praha",
+                "psc": "15000",
+                "zeme": "CR"
+              },
+              "osobni_udaje": {
+                "datum_narozeni": "1992-11-05",
+                "pohlavi": "Zena",
+                "narodnost": "Ceska"
+              }
+            },
+            {
+              "id": "5",
+              "jmeno": "Maximus Horak",
+              "ucet": {
+                "cislo_uctu": "7890123456",
+                "cislo_karty": "234567890",
+                "balance": "25000.00",
+                "datum_vytvoreni": "25.02.2010",
+                "platnost_karty": "09/29",
+                "internetove_platby": "povolen",
+                "limit_internetove_platby": "10000"
+              },
+              "historie_transakci": [
+                
+                  {
+                    "datum": "2024-04-18",
+                    "castka": "-300.00",
+                    "popis": "Nakup v obchode",
+                    "typ_uctu": "Bezny ucet",
+                    "zpusob_platby": "Platba kartou"
+                  },
+                  {
+                    "datum": "2024-05-20",
+                    "castka": "-200.00",
+                    "popis": "Platba uctu za telefon",
+                    "typ_uctu": "Studentsky ucet",
+                    "zpusob_platby": "Platebni aplikace"
+                  }
+              ],
+              "kontaktni_informace": {
+                "email": "maximus.horak@example.com",
+                "telefon": "+4207779631"
+              },
+              "adresa": {
+                "ulice": "Ulice Karlova",
+                "mesto": "Praha",
+                "psc": "12400",
+                "zeme": "CR"
+              },
+              "osobni_udaje": {
+                "datum_narozeni": "1982-06-30",
+                "pohlavi": "Muz",
+                "narodnost": "Czech"
+              }
+            }
+        ]
+      }
+    }
+  }

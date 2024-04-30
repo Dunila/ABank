@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<banka xmlns:xsd="http://www.w3.org/2001/XMLSchema"  xsi:noNamespaceSchemaLocation="schema.xsd">
+	<zakazniky>
+		<zakaznik>
+			<jmeno>Maria Novakova</jmeno>
+	        <ucet>
+	    		<cislo_uctu>0987654321</cislo_uctu>
+	    		<cislo_karty>123456789</cislo_karty>
+	    		<balance>30000.000</balance>
+	    		<datum_vytvoreni>02.12.2012</datum_vytvoreni>
+	    		<platnost_karty>07/27</platnost_karty>
+	    		<internetove_platby>povolen</internetove_platby>
+	    		<limit_internetove_platby>5000</limit_internetove_platby>
+			</ucet>
+			<historie_transakci>
+			    <transakce>
+			        <datum>2024-04-27</datum>
+			        <castka>-1000.000</castka>
+			        <popis>Nakup</popis>
+			        <typ_uctu>Bezny ucet</typ_uctu>
+			        <zpusob_platby>Platba kartou</zpusob_platby>
+				</transakce>
+				<transakce>
+				    <datum>2024-05-20</datum>
+				    <castka>-200.00</castka>
+				    <popis>Platba uctu za telefon</popis>
+				    <typ_uctu>Studentsky ucet</typ_uctu>
+				    <zpusob_platby>Platebni aplikace</zpusob_platby>
+				</transakce>
+			</historie_transakci>
+			<kontaktni_informace>
+			    <email>- maria.novakova@example.com</email>
+			    <telefon>+420170899</telefon>
+			</kontaktni_informace>
+			<adresa>
+			    <ulice>Ceskomaravska</ulice>
+			    <mesto>Praha</mesto>
+			    <psc>19000</psc>
+			    <zeme>CR</zeme>
+			</adresa>
+			<osobni_udaje>
+			    <datum_narozeni>1990-01-01</datum_narozeni>
+			    <pohlavi>Zena</pohlavi>
+			    <narodnost>Ceska</narodnost>
+			</osobni_udaje>
+		</zakaznik>
+
+		<zakaznik>
+		    <jmeno>Joannes Novak</jmeno>
+		    <ucet>
+		        <cislo_uctu>1234567890</cislo_uctu>
+		        <cislo_karty>987654321</cislo_karty>
+		        <balance>50000.00</balance>
+		        <datum_vytvoreni>05.10.2015</datum_vytvoreni>
+	    		<platnost_karty>05/25</platnost_karty>
+	    		<internetove_platby>povolen</internetove_platby>
+	    		<limit_internetove_platby>2500</limit_internetove_platby>
+		    </ucet>
+		    <historie_transakci>
+		        <transakce>
+		            <datum>2024-04-25</datum>
+		            <castka>-500.00</castka>
+		            <popis>Uhrada faktury</popis>
+		            <typ_uctu>Firemni ucet</typ_uctu>
+			        <zpusob_platby>Bankovni prevod</zpusob_platby>
+		        </transakce>
+		        <transakce>
+				    <datum>2024-05-15</datum>
+				    <castka>-50.00</castka>
+				    <popis>Vyber z bankomatu</popis>
+				    <typ_uctu>Bezny ucet</typ_uctu>
+				    <zpusob_platby>Hotovostni platba</zpusob_platby>
+				</transakce>
+		    </historie_transakci>
+		    <kontaktni_informace>
+		        <email>joannes.novak@example.com</email>
+		        <telefon>+0987654321</telefon>
+		    </kontaktni_informace>
+		    <adresa>
+		        <ulice>Karlove namesti</ulice>
+		        <mesto>Praha</mesto>
+		        <psc>16500</psc>
+		        <zeme>CR</zeme>
+		    </adresa>
+		    <osobni_udaje>
+		        <datum_narozeni>1985-07-15</datum_narozeni>
+		        <pohlavi>Muz</pohlavi>
+		        <narodnost>Cech</narodnost>
+		    </osobni_udaje>
+		</zakaznik>
+
+		<zakaznik>
+		    <jmeno>Carolus Dvorak</jmeno>
+		    <ucet>
+		        <cislo_uctu>9876543210</cislo_uctu>
+		        <cislo_karty>456789012</cislo_karty>
+		        <balance>100000.00</balance>
+		        <datum_vytvoreni>15.09.2012</datum_vytvoreni>
+	    		<platnost_karty>05/28</platnost_karty>
+	    		<internetove_platby>povolen</internetove_platby>
+	    		<limit_internetove_platby>3000</limit_internetove_platby>
+		    </ucet>
+		    <historie_transakci>
+		        <transakce>
+		            <datum>2024-04-22</datum>
+		            <castka>5000.00</castka>
+		            <popis>Pripsani platu</popis>
+		            <typ_uctu>Bezny ucet</typ_uctu>
+			        <zpusob_platby>Platba kartou </zpusob_platby>
+		        </transakce>
+		        <transakce>
+				    <datum>2024-05-10</datum>
+				    <castka>-1500.00</castka>
+				    <popis>Platba najemneho</popis>
+				    <typ_uctu>Sporici ucet</typ_uctu>
+				    <zpusob_platby>Bankovni prevod</zpusob_platby>
+				</transakce>
+		    </historie_transakci>
+		    <kontaktni_informace>
+		        <email>joannes.novak@example.com</email>
+		        <telefon>+420564877</telefon>
+		    </kontaktni_informace>
+		    <adresa>
+		        <ulice>Hradsany</ulice>
+		        <mesto>Praha</mesto>
+		        <psc>16900</psc>
+		        <zeme>CR</zeme>
+		    </adresa>
+		    <osobni_udaje>
+		        <datum_narozeni>1978-03-10</datum_narozeni>
+		        <pohlavi>Muz</pohlavi>
+		        <narodnost>Cech</narodnost>
+		    </osobni_udaje>
+		</zakaznik>
+		<zakaznik>
+		    <jmeno>Lucia Kolarova</jmeno>
+		    <ucet>
+		        <cislo_uctu>0123456789</cislo_uctu>
+		        <cislo_karty>789012345</cislo_karty>
+		        <balance>80000.00</balance>
+		        <datum_vytvoreni>25.02.2010</datum_vytvoreni>
+	    		<platnost_karty>07/28</platnost_karty>
+	    		<internetove_platby>povolen</internetove_platby>
+	    		<limit_internetove_platby>4500</limit_internetove_platby>
+		    </ucet>
+		    <historie_transakci>
+		        <transakce>
+		            <datum>2024-04-20</datum>
+		            <castka>-15000.00</castka>
+		            <popis>Platba najemneho</popis>
+		            <typ_uctu>Bezny ucet</typ_uctu>
+			        <zpusob_platby>PayPal platba</zpusob_platby>
+		        </transakce>
+		        <transakce>
+				    <datum>2024-05-15</datum>
+				    <castka>-50.00</castka>
+				    <popis>Vyber z bankomatu</popis>
+				    <typ_uctu>Beznz ucet</typ_uctu>
+				    <zpusob_platby>Hotovostni platba</zpusob_platby>
+				</transakce>
+		    </historie_transakci>
+		    <kontaktni_informace>
+		        <email>lucia.kolarova@example.com</email>
+		        <telefon>+4201589635</telefon>
+		    </kontaktni_informace>
+		    <adresa>
+		        <ulice>Chaloupeckeho</ulice>
+		        <mesto>Praha</mesto>
+		        <psc>15000</psc>
+		        <zeme>CR</zeme>
+		    </adresa>
+		    <osobni_udaje>
+		        <datum_narozeni>1992-11-05</datum_narozeni>
+		        <pohlavi>Zena</pohlavi>
+		        <narodnost>Ceska</narodnost>
+		    </osobni_udaje>
+		</zakaznik>
+
+		<zakaznik>
+		    <jmeno>Maximus Horak</jmeno>
+		    <ucet>
+		        <cislo_uctu>7890123456</cislo_uctu>
+		        <cislo_karty>234567890</cislo_karty>
+		        <balance>25000.00</balance>
+		        <datum_vytvoreni>25.02.2010</datum_vytvoreni>
+	    		<platnost_karty>09/29</platnost_karty>
+	    		<internetove_platby>povolen</internetove_platby>
+	    		<limit_internetove_platby>10000</limit_internetove_platby>
+		    </ucet>
+		    <historie_transakci>
+		        <transakce>
+		            <datum>2024-04-18</datum>
+		            <castka>-300.00</castka>
+		            <popis>Nakup v obchode</popis>
+		            <typ_uctu>Bezny ucet</typ_uctu>
+			        <zpusob_platby>Platba kartou</zpusob_platby>
+		        </transakce>
+		        <transakce>
+				    <datum>2024-05-20</datum>
+				    <castka>-200.00</castka>
+				    <popis>Platba uctu za telefon</popis>
+				    <typ_uctu>Studentsky ucet</typ_uctu>
+				    <zpusob_platby>Platebni aplikace</zpusob_platby>
+				</transakce>
+		    </historie_transakci>
+		    <kontaktni_informace>
+		        <email>maximus.horak@example.com</email>
+		        <telefon>+4207779631</telefon>
+		    </kontaktni_informace>
+		    <adresa>
+		        <ulice>Ulice Karlova</ulice>
+		        <mesto>Praha</mesto>
+		        <psc>12400</psc>
+		        <zeme>CR</zeme>
+		    </adresa>
+		    <osobni_udaje>
+		        <datum_narozeni>1982-06-30</datum_narozeni>
+		        <pohlavi>Muz</pohlavi>
+		        <narodnost>Czech</narodnost>
+		    </osobni_udaje>
+		</zakaznik>
+	</zakazniky>
+</banka>

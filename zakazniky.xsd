@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" >
+<xs:element name="banka">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="zakazniky">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="zakaznik" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="jmeno" type="xs:string" />
+                  <xs:element name="ucet">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="cislo_uctu" type="xs:integer" />
+                        <xs:element name="cislo_karty" type="xs:integer" />
+                        <xs:element name="balance" type="xs:decimal" />
+                        <xs:element name="datum_vytvoreni" type="xs:date" />
+                        <xs:element name="platnost_karty" type="xs:date" />
+                        <xs:element name="internetove_platby" type="xs:string" />
+                        <xs:element name="limit_internetove_platby" type="xs:decimal" />
+                      </xs:sequence>
+                      <xs:attribute name="id_zakaznik" type="xs:integer" />
+                      <xs:attribute name="jaka_pobocka" type="xs:string" />
+                      <xs:attribute name="typ_uctu" type="xs:string" />
+                      <xs:attribute name="kdo_zalozil_ucet" type="xs:string" />
+                      <xs:attribute name="kdy_ aktualizovano" type="xs:string" />
+                      <xs:attribute name="kreditni_skore" type="xs:integer" />
+                      <xs:attribute name="balance_status" type="xs:integer" />
+                    </xs:complexType>                  
+                  </xs:element>
+                  <xs:element name="historie_transakci">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="transakce" maxOccurs="unbounded">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="datum" type="xs:date" />
+                              <xs:element name="castka" type="xs:decimal" />
+                              <xs:element name="popis" type="xs:string" />
+                              <xs:element name="typ_uctu" type="xs:string" />
+                              <xs:element name="zpusob_platby" type="xs:string" />
+                            </xs:sequence>
+                            <xs:attribute name="id_transakce" type="xs:integer" />
+                            <xs:attribute name="mena" type="xs:string" />
+                            <xs:attribute name="typ_transakce" type="xs:string" />
+                            <xs:attribute name="stav_transakce" type="xs:string" />
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="kontaktni_informace">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="email" type="xs:string" />
+                        <xs:element name="telefon" type="xs:integer" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="adresa">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="ulice" type="xs:string" />
+                        <xs:element name="mesto" type="xs:string" />
+                        <xs:element name="psc" type="xs:integer" />
+                        <xs:element name="zeme" type="xs:string" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="osobni_udaje">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="datum_narozeni" type="xs:date" />
+                        <xs:element name="pohlavi" type="xs:string" />
+                        <xs:element name="narodnost" type="xs:string" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>                
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<!-- 5 vlastních restrikcí -->
+
+<!--Omezení na české měnové jednotky - CZK a EUR-->
+<xs:simpleType name="ceska_mena">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CZK" />
+      <xs:enumeration value="EUR" />
+    </xs:restriction>
+  </xs:simpleType>
+
+<!--Omezení na české varianty pohlaví - Muž a Žena-->
+  <xs:simpleType name="ceske_pohlavi">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Muž" />
+      <xs:enumeration value="Žena" />
+    </xs:restriction>
+  </xs:simpleType>
+
+<!--Omezení povolených hodnot pro oblast kódu "cislo_uctu" -->
+<xs:simpleType name="cislo_uctu_type">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="\d{10}" />
+    </xs:restriction>
+</xs:simpleType>
+
+<!--Omezeno na český telefonní formát +420XXXXXXXXXXXXXXX-->
+  <xs:simpleType name="cesky_telefon">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\+420\d{9}" />
+    </xs:restriction>
+  </xs:simpleType>
+
+<!--Omezení na formát českého e-mailu-->
+  <xs:simpleType name="cesky_email">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
